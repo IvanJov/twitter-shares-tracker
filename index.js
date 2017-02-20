@@ -9,6 +9,6 @@ var client = new Twitter({
   access_token_secret: config.access_token_secret
 });
 
-client.get('search/tweets', {q: 'http://ivanjov.com/working-with-http-streams-with-cycle-js/'}, function(error, tweets, response) {
-  console.log(tweets.search_metadata);
+client.get('search/tweets', {q: 'node.js'}, function(error, tweets, response) {
+  console.log(tweets);
 });
